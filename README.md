@@ -366,5 +366,43 @@ python3 gen_sa_accounts.py --download-keys project_id
 
 * https://github.com/basecamp/xip-pdns
 
+### XMR Miner Ubuntu
+
+````
+sudo apt-get install git build-essential cmake automake libtool autoconf
+git clone https://github.com/xmrig/xmrig.git
+mkdir xmrig/build && cd xmrig/scripts
+./build_deps.sh && cd ../build
+cmake .. -DXMRIG_DEPS=scripts/deps
+make -j$(nproc)
+nano config.json
+````
+
+````
+{
+    "http": {
+        "enabled": true,
+        "host": "0.0.0.0",
+        "port": 80,
+        "access-token": null,
+        "restricted": true
+    },
+    "autosave": true,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "url": "monerohash.com:9999",
+            "user": "86jC4u19gRmKXpnykAnRvR6S9RSNVYgZR68Hxp314cukCmENzKQB1GNcDtZXEoFDuCZ9STL78oQpvHGvLpXg34z7Voctp2C",
+            "keepalive": true,
+            "tls": true
+        }
+    ]
+}
+````
+
+`./xmrig`
+
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
 
