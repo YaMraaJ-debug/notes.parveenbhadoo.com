@@ -402,7 +402,11 @@ nano config.json
 }
 ````
 
+
+
 ````
+sudo apt-get install tmux
+tmux
 ./xmrig
 ````
 
