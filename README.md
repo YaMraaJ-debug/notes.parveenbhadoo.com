@@ -402,7 +402,9 @@ nano config.json
 }
 ````
 
-`./xmrig`
+````
+./xmrig
+````
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
 
