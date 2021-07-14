@@ -1,6 +1,4 @@
-# CDN at jsDelivr [![](https://data.jsdelivr.com/v1/package/gh/ParveenBhadooOfficial/BhadooJS/badge)](https://www.jsdelivr.com/package/gh/ParveenBhadooOfficial/BhadooJS)
-
-## Images, CSS, JS etc Assets Github CDN for Parveen Bhadoo Websites
+# Parveen Bhadoo Notes
 
 ## Important Links
 
@@ -24,20 +22,20 @@ sudo apt update && sudo apt upgrade
 ### Working with npm
 
 Use Node.js command prompt as terminal
-    
+
 Create a package.json file with name and version where bhadoojs is Assets package name.
-    
+
     {
     "name": "bhadoojs",
     "version": "1.0.0"
     }
-    
+
 Use Publish Command to Publish the Repo Publically
-    
+
     npm publish --access=public
-    
+
 To delete a package use
-    
+
     npm unpublish <package_name> -f --force
 
 ### Forward Emails from Domains using DNS and [ForwardMail.Net](https://forwardemail.net)
@@ -162,13 +160,13 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 Make Error Handling Page
 
 `sudo mkdir /opt/bitnami/apps/wordpress/htdocs/ip`
-        
+
 `sudo nano /opt/bitnami/apps/wordpress/htdocs/ip/index.html`
-        
+
 Add the content you want to display
 
 `sudo chmod -R 777 /opt/bitnami/apps/wordpress/htdocs/ip`
-        
+
 Edit this config file
 
 `sudo nano /opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf`
@@ -199,7 +197,7 @@ ServerAlias *
 DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
 Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
 </VirtualHost>
-        
+
 <VirtualHost *:443>
 ServerName xxx.xxx.xxx.xxx
 ServerAlias *
@@ -411,4 +409,3 @@ tmux
 ````
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
-
